@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+:root {
+    --background: #262624;
+    --color-p: #F2BDBD;
+    --color-h: #D96B43;
+    --color-fav: #A65233;
+    --color-other: #8C512E;
+    --color-bsc-bg: #f3ba2f;
+    --color-eth-bg: #716b94;
+    --orchid: #F92672;
+    --br-blue: #66D9EF;
+    --henn1nk: #A6E22E;
+    --spice: #FD971F;
+    --classColour: #FFE792;
+    --parColour: #F8F8F2;
+}
+/*Body and Containers*/
+body,html {
+    font-family: 'Noto Sans Mono', monospace;
+    background-color: var(--background);
+    position: relative;
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding-left:15px;
+  padding-right:15px;
+}
+
+/*Text*/
+h1 {
+    color: var(--color-h);
+    margin-bottom: 0px;
+    font-size:40px;
+    
+}
+h2 {
+    color: var(--color-fav);
+    margin-top: 0px;
+    font-size: 20px;
+}
+p {
+    color: var(--parColour);
+}
+a {
+    color: var(--color-other);
+}
+/*Logo*/
+.logo {
+    color: var(--parColour);
+    width: 45%;
+    margin-left: 70px;
+    margin-bottom: 0px;
+
+}
+
+/*Find*/
+.find {
+    font-size: 15px;
+}
+.open{
+    display: none;
+}
+/*Actionz*/
+.results {
+    display: flex;
+    justify-content: center;
+    color: var(--parColour);
+}
+#resultBSC {
+    width: 100%;
+}
+#resultETH {
+    width: 100%;
+}
+/*Buttons*/
+button {
+    border: none;
+}
+.actionz {
+    margin-left : 90px;
+}
+.actionBSC {
+  background-color: var(--color-bsc-bg);
+  display:inline-block;
+  padding:0.5em 30px;
+  margin:0 0.3em 0.3em ;
+  border-radius:5px;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-weight:400;
+  text-align:center;
+  transition: all 0.2s;
+}
+.actionETH {
+ background-color: var(--color-eth-bg);
+ color: aliceblue;
+ display:inline-block;
+ padding:0.5em 30px;
+ margin:0 0.3em 0.3em 0;
+ border-radius:5px;
+ box-sizing: border-box;
+ text-decoration:none;
+ font-weight:400;
+ text-align:center;
+ transition: all 0.2s;
+}
+.actionBSC:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+    }
+   
+ .actionETH:hover{
+        color:#000000;
+        background-color:#FFFFFF;
+        }
+.popup {
+    display: none;
+    background-color: #ffffff;
+    width: 420px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    text-align: center;
+}
+/*footer*/
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    font-size: 1em;
+    padding: 5px;
+    width:100%
+  }
+  footer p {
+    text-align: right;
+    margin-right: 10px;
+    
+  }
+/*Media Queries*/
+@media all and (max-width:30em){
+
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    .logo {
+        margin-left: 30px;
+    }
+    .find {
+        font-size: 12px;
+    }
+    .socials {
+        font-size: 13px;
+    }
+    .open{
+        display: inline;
+    }
+    .actionz {
+        margin-left: 50px;
+    }
+    .results {
+        display: inline;
+        color: var(--parColour);
+    }
+  
+      footer {display: none;}
+    }
+  
